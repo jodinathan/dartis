@@ -123,7 +123,7 @@ abstract class SortedSetCommands<K, V> {
   /// the scores ordered from low to high.
   ///
   /// See https://redis.io/commands/zrank
-  Future<int> zrank(K key, V member);
+  Future<int?> zrank(K key, V member);
 
   /// Removes the specified members from the sorted set stored at [key].
   ///

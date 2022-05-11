@@ -1010,8 +1010,8 @@ class Commands<K, V> extends ModuleBase
   }
 
   @override
-  Future<int> zrank(K? key, V? member) =>
-      run<int>(<Object?>[r'ZRANK', key, member]);
+  Future<int?> zrank(K? key, V? member) =>
+      run<int?>(<Object?>[r'ZRANK', key, member]);
 
   @override
   Future<int> zrem(K? key, {V? member, Iterable<V?> members = const []}) =>
